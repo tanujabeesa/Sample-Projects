@@ -1,0 +1,233 @@
+body,html {
+    background-color: hsl(30, 54%, 90%);
+
+   
+}
+
+.card--container {
+    background-color: white;
+    border-radius: 24px;
+    width: 736px;
+    height: 1708px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	
+    
+}
+
+.card--picture {
+    width: 656px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    
+}
+
+.card--content {
+    width: 656px;
+    height: 1350px;
+}
+
+.card--title {
+    line-height: 100%;
+    font-size: 40px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.card--subtitle {
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.card--preparation {
+    padding: 28px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 12px;
+    margin: 38px 0;
+}
+
+.card--preparation__title {
+    font-size: 20px;
+    line-height: 100%;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+.card--preparation__list {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.card--preparation__list li {
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+.card--ingredients__title {
+    font-size: 28px;
+    line-height: 150%;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(332, 51%, 32%);
+}
+
+.card--ingredients__list {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    padding-left: 25px;
+}
+
+.card--ingredients__list li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+ul,ol li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e0d4;
+    width: 656px;
+    height: 1px;
+    margin: 32px 0;
+}
+
+.card--instructions__title {
+    font-size: 28px;
+    line-height: 150%;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(332, 51%, 32%);
+}
+
+.card--instructions__list {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    padding-left: 25px;
+    margin-top: 24px;
+}
+
+.card--instructions__list li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.card--nutrition__title {
+    font-size: 28px;
+    line-height: 150%;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(332, 51%, 32%);
+}
+
+.card--nutrition__subtitle {
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Crée deux colonnes de largeur automatique */
+    gap: 12px; /* Espacement entre les éléments */
+    padding: 12px 0;
+}
+
+.grid-item {
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    margin-left: 30px;
+}
+
+.grid--item {
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    margin-right: 24px;
+}
+
+.grid-line {   
+    background-color: #e6e0d4;
+    height: 1px;
+    grid-column: 1 / -1;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    body,html {
+        margin: 0;
+        background-color: white;
+    }
+    .card--container {
+        border-radius: 0;
+        width: 375px;
+        height: 2043px;
+        padding: 0 0 40px 0; 
+    }
+
+    .card--picture {
+        width: 375px;
+        height: 171px;
+        border-radius: 0;
+    }
+
+    .card--content {
+        width: 311px;
+        height: 216px;
+        padding: 24px 0;
+    }
+
+    .card--title {
+        font-size: 36px;
+    }
+
+    .card--preparation {
+        padding: 24px;
+        margin: 32px 0;
+    }
+
+    .card--preparation__title {
+       margin-bottom: 16px;    
+    }
+
+    .line {
+        width: 311px;
+        height: 1px;
+        margin: 32px 0;
+    }
+
+
+
+    
+
+}
